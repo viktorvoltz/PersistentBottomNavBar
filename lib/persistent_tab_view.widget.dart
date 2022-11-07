@@ -386,7 +386,7 @@ class _PersistentTabViewState extends State<PersistentTabView> {
       }
     });
     if (widget.selectedTabScreenContext != null) {
-      WidgetsBinding.instance.addPostFrameCallback((final _) {
+      WidgetsBinding.instance?.addPostFrameCallback((final _) {
         widget.selectedTabScreenContext!(_contextList[_controller!.index]);
       });
     }

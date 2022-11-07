@@ -40,7 +40,7 @@ class _BottomNavStyle8State extends State<BottomNavStyle8>
           .animate(_animationControllerList[i]));
     }
 
-    WidgetsBinding.instance.addPostFrameCallback((final _) {
+    WidgetsBinding.instance?.addPostFrameCallback((final _) {
       _animationControllerList[_selectedIndex!].forward();
     });
   }
